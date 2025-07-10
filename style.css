@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-left: 40px;
+    margin-top: 20px;
+
+}
+
+header {
+    position: relative;
+    width: 100%;
+    margin-left: -40px;
+    margin-top: -20px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.menu-hamburger {
+    width: 30px;
+    height: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+.menu-hamburger span {
+    display: block;
+    height: 4px;
+    background: #000;
+    border-radius: 2px;
+}
+
+header img {
+    height: 40px;
+    user-select: none;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 40px;
+    z-index: 10;
+}
+
+.search-box {
+    width: 400px;
+    height: 40px;
+    padding: 8px 12px;
+    border-radius: 20px 0 0 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.search-btn {
+    width: 50px;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    background-color: #f8f8f8;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.search-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.search-box:focus {
+    border-color: #0391f4;
+    box-shadow: 0 0 5px #0391f4;
+}
+
+.header-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    position: fixed;
+    top: 10px;
+    right: 0;
+    padding-right: 10px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+.header-buttons img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    pointer-events: none;
+    margin-right: 10px;
+}
+
+
+/* Botões (vídeo e sino) */
+.btn {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.btn:hover {
+    color: #0391f4;
+}
+
+/* Avatar */
+.avatar {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    object-fit: cover;
+    user-select: none;
+
+}
+
+main {
+    display: flex;
+    width: 952px;
+    height: 742px;
+    padding-top: 10px;
+    margin-right: 84px;
+    margin-left: 75px;
+    gap: 16px;
+}
+
+main img {
+    display: block;
+    margin-top: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.Video-Actions {
+    display: flex;
+    gap: 65px;
+    align-items: center;
+
+}
+
+.Video-Actions img {
+    object-fit: contain;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+
+.sidebar {
+    position: absolute;
+    top: 90px;
+    right: 300px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.video img {
+    cursor: pointer;
+    pointer-events: auto;
+}
